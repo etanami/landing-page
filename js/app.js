@@ -17,7 +17,8 @@
  * Define Global Variables
  * 
 */
-
+const Sections = document.querySelectorAll('section');
+const navList = document.getElementById('navbar__list');
 
 /**
  * End Global Variables
