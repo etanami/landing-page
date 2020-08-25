@@ -38,7 +38,7 @@ const menuNav = document.getElementById('navbar__list');
 const buildNav = () => {
     navHtml = '';
     allSections.forEach(section => {     
-        navHtml += `<li><a href="${section.id}">${section.dataset.nav}</a></li>`;
+        navHtml += `<li><a class= "menu__link" href="${section.id}">${section.dataset.nav}</a></li>`;
     });
     menuNav.innerHTML = navHtml;
 
