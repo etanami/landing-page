@@ -48,7 +48,17 @@ buildNav();
 
 
 // Add class 'active' to section when near top of viewport
-
+const activeSection = () => {
+    allSections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if(sectionTop < 200 && sectionTop >= -200){
+            section.classList.add('your-active-class');
+        }else{
+            section.classList.remove('your-active-class');
+        }
+    });
+}
+document.addEventListener('scroll', activeSection);
 
 // Scroll to anchor ID using scrollTO event
 
