@@ -66,7 +66,7 @@ document.addEventListener('scroll', activeSection);
 
 // Scroll to anchor ID using scrollTO event
 document.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', function(event){
+    a.addEventListener('click', event => {
         //stopped the default occuring event
         event.preventDefault();
         //'smooth' scrolls to the section instead of an automatic jump        
