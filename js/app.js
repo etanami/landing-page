@@ -37,9 +37,11 @@ const menuNav = document.getElementById('navbar__list');
 // build the nav
 const buildNav = () => {
     navHtml = '';
+    //adds this html as <li>
     allSections.forEach(section => {     
         navHtml += `<li><a class= "menu__link" href="${section.id}">${section.dataset.nav}</a></li>`;
     });
+    //sets html to the <ul>
     menuNav.innerHTML = navHtml;
 
 };
@@ -50,6 +52,7 @@ buildNav();
 // Add class 'active' to section when near top of viewport
 const activeSection = () => {
     allSections.forEach(section => {
+        //gets the value of top
         const sectionTop = section.getBoundingClientRect().top;
         if(sectionTop < 200 && sectionTop >= -200){
             section.classList.add('your-active-class');
@@ -58,10 +61,20 @@ const activeSection = () => {
         }
     });
 }
+//calls activeSection function into the scroll event
 document.addEventListener('scroll', activeSection);
 
 // Scroll to anchor ID using scrollTO event
-
+document.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', function(event){
+        //stopped the default occuring event
+        event.preventDefault();
+        //'smooth' scrolls to the section instead of an automatic jump        
+        document.getElementById(a.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
 /**
  * End Main Functions
