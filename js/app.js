@@ -70,19 +70,14 @@ document.querySelectorAll('a').forEach(a => {
         //stopped the default occuring event
         event.preventDefault();
         //'smooth' scrolls to the section instead of an automatic jump        
-        document.getElementById(a.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        document.getElementById(a.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
     });
 });
 
 /**
  * End Main Functions
- * Begin Events
  * 
 */
-
-// Build menu 
 
 // Scroll to section on link click
 

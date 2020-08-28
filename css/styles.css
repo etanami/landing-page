@@ -83,14 +83,14 @@ section {
 }
 
 .navbar__menu .menu__link:hover {
-    background: #333;
-    color: #fff;
+    background: rgb(17, 17, 17);
+    color: rgb(233, 101, 24);
     transition: ease 0.3s all;
 }
 
 /* Header Styles */
 .page__header {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.719);
     position: fixed;
     top: 0;
     width: 100%;
@@ -105,7 +105,7 @@ section {
 }
 
 .page__footer p{
-    color: #fff;
+    color: rgb(233, 101, 24);
 }
 
 
