@@ -108,6 +108,26 @@ section {
     color: rgb(233, 101, 24);
 }
 
+#top_btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none; 
+    outline: none; 
+    background-color: rgb(233, 101, 24);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 30%;
+    font-size: 16px;
+}
+  
+#top_btn:hover {
+    opacity: 0.8; 
+}
+
 
 /* ---- Theme Rules ---- */
 /* Landing Container Styles */
