@@ -94,7 +94,3 @@ function toTopFunction() {
  * End Main Functions
  * 
 */
-
-// Set sections as active
-
-
