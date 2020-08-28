@@ -24,14 +24,12 @@ const myBtn = document.getElementById("top_btn");
 
 /**
  * End Global Variables
- * Start Helper Functions
  * 
 */
 
 
 
 /**
- * End Helper Functions
  * Begin Main Functions
  * 
 */
@@ -94,3 +92,6 @@ function toTopFunction() {
  * End Main Functions
  * 
 */
+
+
+
